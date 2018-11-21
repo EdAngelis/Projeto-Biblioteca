@@ -1,0 +1,40 @@
+<form  #livroForm = "ngForm" (ngSubmit)="addLivro(livroForm)" >
+  <fieldset>
+
+  <div class="form-group">
+    <label class="col-md-4 control-label" for="nomeLivro">Título</label>  
+    <div class="col-md-4">
+    <input #name="ngModel" [(ngModel)]="LivroService.SelectLivro.name" id="nomeLivro" name="name" type="text" placeholder="" class="form-control input-md" required="required">
+      
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label class="col-md-4 control-label" for="autor">Autor</label>  
+    <div class="col-md-4">
+    <input #author="ngModel" [(ngModel)]="LivroService.SelectLivro.author" id="Autor" name="author" type="text" required="required" placeholder="" class="form-control input-md">
+      
+    </div>
+  </div>
+
+
+  <div class="form-group">
+    <label class="col-md-4 control-label" for="categoria">Categoria</label>  
+    <div class="col-md-4">
+    <input #category="ngModel" [(ngModel)]="LivroService.SelectLivro.category" id="categoria" name="category" required="required" type="text" placeholder="" class="form-control input-md">
+      
+    </div>
+  </div>
+
+  <!-- Button -->
+  <div class="form-group">
+    <label class="col-md-4 control-label" for="cadastroButton"></label>
+    <div class="col-md-4">
+      <button id="cadastroButton" name="cadastroButton" class="btn btn-primary">Cadastrar</button>
+      <button (click)="resetForm(livroForm)"class="btn btn-primary" style="margin-left: 2px">Limpar</button>
+    </div>
+  </div>
+      
+
+  </fieldset>
+  </form>

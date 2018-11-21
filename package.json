@@ -1,0 +1,24 @@
+{
+  "name": "projeto-biblioteca",
+  "version": "1.0.0",
+  "description": "Trabalho Faculdade",
+  "main": "y",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EdAngelis/Projeto-Biblioteca.git"
+  },
+  "author": "Ed Angelis",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EdAngelis/Projeto-Biblioteca/issues"
+  },
+  "homepage": "https://github.com/EdAngelis/Projeto-Biblioteca#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "moment": "^2.22.2",
+    "mongoose": "^5.3.13"
+  }
+}

@@ -1,0 +1,46 @@
+
+<div style="height:130px" ></div>
+<form class="form-horizontal" #userForm="ngForm" (ngSubmit)="addUser(userForm)"  >
+        
+  <fieldset>
+
+
+      <!-- Text input-->
+      <div class="form-group">
+      <label class="col-md-4 control-label" for="nomeLivro">Matricula</label>  
+      <div class="col-md-4">
+      <input #cod="ngModel" [(ngModel)]="UsersService.selectUser.cod" id="cadastrarMatricula" name="cod" required="required" type="text" placeholder="Numero de Sua Matricula" class="form-control input-md">
+          
+      </div>
+      </div>
+
+      <!-- Text input-->
+      <div class="form-group">
+      <label class="col-md-4 control-label" for="CadastroNome">Nome</label>  
+      <div class="col-md-4">
+      <input #name="ngModel" [(ngModel)]="UsersService.selectUser.name" id="cadastroNome" name="name" type="text" require="required  " placeholder="Nome Completo" class="form-control input-md">
+          
+      </div>
+      </div>
+
+      <!-- Text input-->
+      <div class="form-group">
+      <label class="col-md-4 control-label" for="cadastroEmail">E-Mail</label>  
+      <div class="col-md-4">
+      <input #email="ngModel" [(ngModel)]="UsersService.selectUser.email" id="cadastroEmail" name="email" type="text" placeholder="E-Mail" class="form-control input-md">
+          
+      </div>
+      </div>
+
+      <!-- Button -->
+      <div class="form-group">
+      <label class="col-md-4 control-label" for="cadastroButton"></label>
+      <div class="col-md-4">
+          <button id="cadastroButton" name="cadastroButton" class="btn btn-primary">Cadastrar</button>
+      </div>
+      </div>
+      
+
+  </fieldset>
+</form>
+
