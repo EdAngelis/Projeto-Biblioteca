@@ -19,7 +19,7 @@ notifCtrl.getNotification = async (req, res, next)=>{
                     secure: true, // true for 465, false for other ports
                     auth: {
                         user: "ed4ngelis@gmail.com",
-                        pass: "************"
+                        pass: "#Google=711724"
                     },
                     tls: { rejectUnauthorized: false }
                   });
