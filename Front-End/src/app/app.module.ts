@@ -13,6 +13,10 @@ import { CadastroLivroFormsComponent } from './components/cadastro-livro-forms/c
 import { ListaLivrosComponent } from './components/lista-livros/lista-livros.component';
 import { CadastroUsuarioComponent } from './cadastro-usuario/cadastro-usuario.component';
 import { CadastroFormsComponent } from './cadastro-usuario/components/cadastro-forms/cadastro-forms.component';
+import { RetiradaComponent } from './retirada/retirada.component';
+import { FormsRetiradaComponent } from './components/forms-retirada/forms-retirada.component';
+import { ListaRetiradaComponent } from './components/lista-retirada/lista-retirada.component';
+import { DevolutionListComponent } from './components/devolution-list/devolution-list.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +28,11 @@ import { CadastroFormsComponent } from './cadastro-usuario/components/cadastro-f
     CadastroLivroFormsComponent,
     ListaLivrosComponent,
     CadastroUsuarioComponent,
-    CadastroFormsComponent
+    CadastroFormsComponent,
+    RetiradaComponent,
+    FormsRetiradaComponent,
+    ListaRetiradaComponent,
+    DevolutionListComponent
   ],
   imports: [
     BrowserModule,

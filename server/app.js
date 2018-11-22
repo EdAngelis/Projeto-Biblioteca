@@ -9,6 +9,7 @@ const livrosRoutes = require('.//routes/livros-routes');
 const routes = require('../server/routes/routes');
 const usuariosRoutes = require('../server/routes/usuarios-routes');
 const retiradaRoutes = require('../server/routes/retirada-routes');
+const notificationRoutes = require('../server/routes/notificatio-routes');
 
 http.createServer(app);
 mongoose.connect('mongodb://DeAngelis84:biblioteca1234@ds163683.mlab.com:63683/biblioteca', {useNewUrlParser:true});
@@ -21,6 +22,8 @@ app.use('/', routes);
 app.use('/livros', livrosRoutes);
 app.use('/usuarios', usuariosRoutes);
 app.use('/retirarLivro', retiradaRoutes);
+app.use('/notification', notificationRoutes);
+
 
 app.listen(app.get('port'),()=>{
     console.log("Servidor Funcionando na porta:", + app.get('port'));

@@ -11,9 +11,9 @@ const livroRetirado = new Schema({
     
     livro:{ type: mongoose.Schema.Types.ObjectId, 
     ref: 'livro',
-    required: true},
+    required: true, unique:true},
 
-    date:{ type: Date, required: true}
+    dateDevolution:{ type: Date, required: true}
 });
 
 module.exports = mongoose.model('retirada', livroRetirado);

@@ -9,7 +9,7 @@ export class LivroService {
 
 
   readonly URL_SERVER = "http://localhost:3000/livros";
-
+  readonly URL_NOTIFICATION = 'http://localhost:3000/notification';
   SelectLivro: Livro;
   Livros: Livro[];
 
@@ -23,5 +23,9 @@ export class LivroService {
 
   getLivro(){
     return this.HttpClient.get(this.URL_SERVER);
+  }
+  
+  sendNotification(){
+    this.HttpClient.get(this.URL_NOTIFICATION);
   }
 }

@@ -1,0 +1,16 @@
+<div style="height: 20px"></div>
+    <table class="table table-dark">
+      <thead>
+        <th scope="col">_ID</th>
+        <th scope="col">Nome</th>
+        <th scope="col">Autor</th>
+    </thead> 
+
+    <tbody> <tr *ngFor="let livro of LivroService.Livros">
+            <td>{{livro._id}}</td>
+            <td>{{livro.name}}</td>
+            <td>{{livro.author}}</td>
+      </tr>
+    </tbody>
+
+</table>

@@ -1,0 +1,14 @@
+<form  #retiradaForms ="ngForm" (ngSubmit)="submitWithdraw(retiradaForms)">
+
+  <div class="form-row">
+    <div class="col">
+      <input type="text" #user="ngModel" [(ngModel)]="RetiradaService.SelectWithdraw.user"  name="user" class="form-control" placeholder="Código do Usuario">
+    </div>
+    <div class="col">
+      <input type="text" #livro="ngModel" [(ngModel)]="RetiradaService.SelectWithdraw.livro"  name="livro" class="form-control" placeholder="Matricula do Livro">
+    </div>
+    <div class="Button">
+      <button id="singlebutton" name="singlebutton" class="btn btn-primary">Retirar Livro</button>
+    </div>
+  </div>
+</form>

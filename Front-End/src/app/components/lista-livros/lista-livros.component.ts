@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { LivroService} from '../../services/livro.service';
-import { NgForm } from '@angular/forms';
 import { Livro } from 'src/app/models/livro';
 
 @Component({
@@ -16,6 +15,7 @@ export class ListaLivrosComponent implements OnInit {
 
   ngOnInit() {
     this.getLivro();
+    this.LivroService.sendNotification();
     
   }
 
